@@ -1,0 +1,279 @@
+/*-- font-family: 'Dosis', sans-serif;
+font-family: 'Open Sans', sans-serif; --*/
+
+:root {
+	--normalBlue: rgb(53, 53, 241);
+}
+
+html,
+body {
+	height: 100%;
+	width: 100%;
+}
+
+body {
+	margin: auto;
+}
+
+.SITE_CONTAINER {
+	max-width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.bolder {
+	color: var(--normalBlue) !important;
+}
+
+.new_section {
+	text-align: center;
+	padding-top: 25px;
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin-top: 80px;
+	background-color: var(--normalBlue) !important;
+	font-weight: bold;
+	font-size: 46px;
+	font-family: 'Open Sans', sans-serif;
+	color: white;
+}
+
+.new_section1 {
+	height: 160px;
+}
+
+.new_section2 {
+	height: 100px;
+}
+
+.column_image {
+	max-width: 480px;
+}
+
+/*-------- Navigation --------*/
+
+.navbar-brand {
+	font-family: 'Dosis', sans-serif;
+	font-size: 40px;
+	font-weight: bold;
+}
+
+.navbar-light .navbar-nav .nav-link {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: bold;
+	font-size: 18px;
+	display: inline-block;
+	text-decoration: none;
+	position: relative;
+	-webkit-transition: all 0.4s ease;
+	transition: all 0.4s ease;
+	padding: 15px;
+}
+
+.navbar-light .navbar-nav .nav-link:after {
+	content: "";
+	position: absolute;
+	height: 2px;
+	background-color: var(--normalBlue) !important;
+	width: 0;
+	left: 50%;
+	bottom: 0;
+	-webkit-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	transform: translateX(-50%);
+	-webkit-transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55)
+		all;
+	transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) all;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+	color: var(--normalBlue) !important;
+}
+
+.navbar-light .navbar-nav .nav-link:hover:after {
+	width: 100%;
+}
+
+.nav {
+	padding: 20px 0px 20px 0px;
+}
+
+/*-------- Introduction --------*/
+
+.intro_container {
+	text-align: center;
+	max-width: 650px;
+	padding-top: 60px;
+	margin: 0 auto;
+	margin-bottom: 80px;
+}
+
+.intro_container h1 {
+	font-family: 'Dosis', sans-serif;
+	font-weight: bold;
+	font-size: 60px;
+	padding-bottom: 30px;
+}
+
+.intro_container p {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.hero_image {
+	max-width: 1000px;
+	transition: .3s ease;
+}
+
+/*-------- The Challenge --------*/
+
+.text_container {
+	font-family: 'Open Sans', sans-serif;
+	max-width: 650px;
+	padding-top: 60px;
+	margin: 0 auto;
+	margin-top: 20px;
+	margin-bottom: 80px;
+}
+
+.text_container h3 {
+	font-weight: bold;
+	font-size: 40px;
+	font-family: 'Dosis', sans-serif;
+	margin-bottom: 40px;
+}
+
+.text_container p,
+li {
+	font-weight: bold;
+	color: rgb(90, 90, 90);
+}
+
+.divider {
+	display: block;
+	height: 2px;
+	border: 0;
+	border-top: 2px solid rgb(136, 176, 197);
+	margin: 1em auto;
+	padding: 0;
+	max-width: 400px;
+}
+
+/*-------- User Survey --------*/
+
+#user_survey {
+	margin-top: 260px;
+}
+
+/*-------- Personas --------*/
+
+.section_personas {
+	text-align: center;
+	padding-top: 25px;
+	position: absolute;
+	left: 0;
+	right: 0;
+	height: 100px;
+	background-color: var(--normalBlue) !important;
+	font-weight: bold;
+	font-size: 46px;
+	font-family: 'Open Sans', sans-serif;
+	color: white;
+}
+
+.persona {
+	font-style: italic;
+	margin-top: 40px;
+}
+
+.persona_image {
+	margin-bottom: 80px;
+}
+
+/*-------- User Stories --------*/
+
+.user_stories {
+	font-style: italic;
+}
+
+.user_stories_image {
+	max-width: 500px;
+	margin-bottom: 80px;
+}
+
+.userStories {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: bold;
+	color: rgb(90, 90, 90);
+	padding-top: 100px;
+}
+
+.userFlow_image {
+	max-width: 1000px;
+	margin-top: -100px;
+	margin-bottom: 80px;
+}
+
+/*-------- Competitive Analysis --------*/
+
+.text_container h4 {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: bold;
+	font-size: 28px;
+}
+
+/*-------- Low Fidelity --------*/
+
+#low_fidelity {
+	margin-top: 160px;
+}
+
+.lowFidelity_image {
+	max-width: 800px;
+	margin-top: -50px;
+	margin-bottom: 80px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*-------- Medium Fidelity --------*/
+
+.mediumFidelity_image {
+	max-width: 1000px;
+}
+
+/*-------- High Fidelity --------*/
+
+.highFidelity_image {
+	max-width: 1000px;
+}
+
+.prototype_video {
+	margin-top: 80px;
+	width: 900px;
+	height: 490px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*-------- Design --------*/
+
+#ui_elements {
+	margin-top: 150px;
+}
+
+.logoSketches_image {
+	padding-top: 70px;
+}
+
+.logoDesigns_image {
+	margin-bottom: 80px;
+}
+
+.design_image {
+	max-width: 1000px;
+}

@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en" class="sr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Poké Mart</title>
+
+        <!-- Link CSS, fonts, icons, bootstrap and jQuery --> 
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+        <script src="https://kit.fontawesome.com/85f138c613.js" crossorigin="anonymous"></script>
+        <link href="project_style.css" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/css?family=Dosis|Open+Sans&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="SITE_CONTAINER">
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-light navbar-expand-lg">
+            <a class="navbar-brand" href="index.html">D.</a>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse-main">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="navbar-collapse-main">
+                <ul class="nav navbar-nav">
+                    <li><a class="nav-link" href="about.html">About</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Intro -->
+        <div class="intro_container">
+            <h1>Poké Mart</h1>
+            <p>Davina’s Poké Mart Delivery is a location-based mobile app concept that allows Pokémon items to be delivered wherever you are.</p>
+        </div>
+        <img class="hero_image" src="img/pokemart_cover.png">
+
+        <div class="text_container">
+            <h3>The Challenge</h3>
+            <p>When Pokémon trainers run out of items, they must travel far and wide to restock at a Poké Mart in town. This is a concern for trainers who have run out of items and must journey through a dangerous area to reach the nearest Poké Mart. <br><br>
+
+            Therefore, the UX must be <span class="bolder">simple and timesaving</span> to assure trainers and their Pokémon can acquire items quickly and in any location. 
+            </p>
+        </div>
+
+        <hr class="divider">
+
+        <div class="text_container">
+            <h3 class="my_role">My Role:</h3>
+            <ul>
+                <li>Illustration/Icon Designs</li>
+                <li>User Research & Analysis</li>
+                <li>Persona Creation</li>
+                <li>User Stories & MVP</li>
+                <li>Wireframes</li>
+                <li>UI Design & Prototyping</li>
+            </ul>
+        </div>
+
+        <!-- Research and Problem Definition -->
+        <h1 class="new_section new_section1">RESEARCH & <br>PROBLEM DEFINITION</h1>
+
+        <!-- Ideating Solutions -->
+        <div class="text_container">
+            <h3 id="user_survey">User Survey</h3>
+            <p>To begin my research, I conducted a short, 10-question user survey to gain insight on users that matched the target user profile. I received 13 responses from past Pokémon players.</p>
+            <h3>Results</h3>
+            <ul>
+                <li>
+                    <span class="bolder">31%</span> disliked having to constantly go to Pokè Marts to restock on items all the time.
+                    <br>
+                    <span class="bolder">61%</span> found it annoying but were okay with it.<br>
+                    <span class="bolder">Solution: Create a usable and memorable app that users will not get bored of.</span>
+                </li>
+                <br>
+                <li>
+                    <span class="bolder">54%</span> would only wait under 10 minutes for a delivery and 23% would wait 10-20 minutes for a delivery.
+                    <br>
+                    <span class="bolder">Solution: Use location to find the nearest Pokè Marts to have faster delivery.</span>
+                </li>
+                <br>
+                <li>
+                    <span class="bolder">50%</span> purchase Pokèballs the most at Pokè Marts, followed by 20% purchasing health potions the most at Pokè Marts.
+                    <br>
+                    <span class="bolder"> Solution: Add a ‘most frequently purchased’ section at the top of the screen.</span>
+                </li>
+            </ul>
+        </div>
+
+        <hr class="divider">
+
+        <!-- Personas -->
+        <div class="text_container">
+            <h3>Personas</h3>
+            <p class="persona">Based on the user research I set up two personas. I referred to them throughout the entire product development process.</p>
+            <br><br>
+            <ul>
+                <li>
+                     Each persona had a scenario that identified a realistic end goal, as well as the user’s <span class="bolder">motivations</span> and <span class="bolder">frustrations</span>. 
+                </li>
+                <br>
+                <li>
+                    The information about each persona focused on the user’s <span class="bolder">interaction</span>. with the product, ultimately affecting my design decisions throughout the process.
+                </li>
+            </ul>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <img class="column_image persona_image" src="img/pokemart/persona.jpg"/>
+            </div>
+            <div class="col">
+                <img class="column_image persona_image" src="img/pokemart/persona 2.jpg"/>
+            </div>
+        </div>
+
+        <hr class="divider">
+
+        <!-- User Stories & MVP -->
+        <div class="text_container">
+            <h3>User Stories & MVP</h3>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6 userStories">
+                <p class="user_stories">After identifying the users’ main goals and behaviours through user research and persona creation, I found that <span class="bolder">the main issues my design decisions needed to solve involved:</span></p>
+                <br>
+                <ul>
+                    <li>
+                        The speed of delivery based on location
+                    </li>
+                    <li>
+                        Delivery time availabilities
+                    </li>
+                    <li>
+                        Ability to purchase any item from a Pokè Mart
+                    </li>
+                </ul>
+                <p>I was able to create user stories and define the MVP based on this information.</p>
+            </div>
+            <div class="col-md-6">
+                <img class="user_stories_image" src="img/pokemart/userStories.png">
+            </div>
+        </div>
+
+        <hr class="divider">
+
+        <div class="text_container">
+            <h3>User Flow</h3>
+            <p>To assist with the structure of the application, I created a user flow diagram to map each step of user interaction to achieve the main goal of this app: </p>
+            <p style="text-align: center" class="bolder">“As a user, I want to order and pay for items to be delivered <br>through Davina’s Pokè Mart Delivery Service”
+            </p>
+        </div>
+
+        <img class="userFlow_image" src="img/pokemart/userFlow.jpeg">
+
+        <hr class="divider">
+
+        <div class="text_container">
+            <h3>Competitive Analysis</h3>
+            <p>Although user research allowed me to narrow the scope of the problem, I needed some inspiration before beginning to wireframe.
+            <br><br>
+            I looked at some fast delivery competitors including Uber Eats and Deliveroo to understand how users can engage efficiently and effectively with the app while placing orders.
+            </p>
+            
+            
+        </div>
+        <div class="row">
+            <div class="col-lg-6">
+                <h4 class="competitive_heading">Deliveroo</h4>
+            <img class="column_image" src="img/pokemart/deliveroo_img.png">
+            </div>
+            <div class="col-lg-6">
+                <h4>Uber Eats</h4>
+            <img class="column_image" src="img/pokemart/ubereats_img.png">
+            </div>
+        </div>
+        
+        <!-- Ideating Solutions -->
+        <h1 class="new_section new_section2">IDEATING SOLUTIONS</h1>
+
+        <!-- Low Fidelity -->
+        <div class="text_container">
+            <h3 id="low_fidelity">Low-Fidelity Wireframes</h3>
+            <p>I began the design process by sketching rough ideas on paper to quickly find alternative setups that worked best.
+            </p>
+        </div>
+        <img class="lowFidelity_image" src="img/pokemart/lowFidelity.JPG"/>
+
+        <hr class="divider">
+
+        <!-- Medium Fidelity -->
+        <div class="text_container">
+            <h3>Medium-Fidelity Wireframes</h3>
+            <p>I turned my revised sketches into an interactive prototype done with Adobe XD. I defined the UI elements, visual hierarchy and design patterns.
+            </p>
+        </div>
+        <img class="mediumFidelity_image" src="img/pokemart/mediumFidelity.jpg"/>
+
+        <hr class="divider">
+
+        <!-- High Fidelity -->
+        <div class="text_container">
+            <h3>High-Fidelity Mockups</h3>
+            <p>After more research and usability testing, I designed the final screens with Adobe XD. The process involved a lot of trial and error with the design choices, as this was my first mobile app design. My aim was to create a clean, modern aesthetic to help users fulfil their goals easier and quicker. The onboarding illustrations were designed in Affinity Designer to stick with the playful theme of colours and Pokémon feel.
+            <br>
+        </div>
+
+        <img class="highFidelity_image" src="img/pokemart/highFidelity1.png"/>
+        <img class="highFidelity_image" src="img/pokemart/highFidelity2.png"/>
+        <img class="highFidelity_image" src="img/pokemart/highFidelity3.png"/>
+
+        <iframe class="prototype_video" src="https://drive.google.com/file/d/1LAsHqkndLPdToNWH8lEFvun99_2KY2j0/preview" ></iframe>
+
+        <!-- Design -->
+        <h1 class="new_section new_section2">DESIGN</h1>
+
+        <div class="text_container">
+            <h3 id="ui_elements">UI Elements</h3>
+
+             <!-- Logo -->
+            <h4>Logo</h4>
+            <p>I designed a few logos around the concept of a Poké ball and motion. The <span class="bolder">Speed Lines</span> version created motion however, it was unclear that it was for a delivery app. The <span class="bolder">Delivery Outfit</span> version was too complex for a logo and would not work well in smaller sizes. 
+            <br><br>
+            I decided on the <span class="bolder">Arrow</span> version because it represents deliveries around the world, where the Poké ball is portrayed as a globe.
+            </p>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-6">
+            <img class="column_image logoSketches_image" src="img/pokemart/logoSketches.JPG">
+            </div>
+            <div class="col-lg-6">
+            <img class="column_image logoDesigns_image" src="img/pokemart/logoDesigns.jpg">
+            </div>
+        </div>
+
+        <hr class="divider">
+
+        <!-- Colours & Typography -->
+        <div class="text_container">
+            <h4>Colours & Typography</h4>
+            <p>To respect the theme of the product, I have made careful decisions in terms of colours and typography. </p>
+        </div>
+        <img class="design_image" src="img/pokemart/typography.png">
+
+        <hr class="divider">
+
+         <!-- Vector Elements -->
+        <div class="text_container">
+            <h4>Vector Elements</h4>
+            <p>For the products of this app, I used <span class="bolder" style="font-style: italic">Affinity Designer</span> to create vector illustrations of the major 25 items found in Poké Marts.</p>
+        </div>
+        <img class="design_image" src="img/pokemart/pokemonItems.jpg"
+
+        </div>
+    </body>
+</html>
