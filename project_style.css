@@ -51,6 +51,12 @@ body {
 	max-width: 480px;
 }
 
+.image_center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 /*-------- Navigation --------*/
 
 .navbar-brand {
@@ -124,7 +130,9 @@ body {
 
 .hero_image {
 	max-width: 1000px;
-	transition: .3s ease;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 /*-------- The Challenge --------*/
@@ -234,9 +242,6 @@ li {
 	max-width: 800px;
 	margin-top: -50px;
 	margin-bottom: 80px;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
 }
 
 /*-------- Medium Fidelity --------*/
@@ -255,9 +260,6 @@ li {
 	margin-top: 80px;
 	width: 900px;
 	height: 490px;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
 }
 
 /*-------- Design --------*/
@@ -276,4 +278,54 @@ li {
 
 .design_image {
 	max-width: 1000px;
+}
+
+/*-------- Responsive --------*/
+
+@media screen and (max-width: 1000px) {
+	.hero_image,
+	.userFlow_image,
+	.lowFidelity_image,
+	.mediumFidelity_image,
+	.highFidelity_image,
+	.design_image {
+		max-width: 740px;
+	}
+
+	.prototype_video {
+		width: 740px;
+		height: 402px;
+	}
+}
+
+@media screen and (max-width: 740px) {
+	.hero_image,
+	.userFlow_image,
+	.lowFidelity_image,
+	.mediumFidelity_image,
+	.highFidelity_image,
+	.design_image {
+		max-width: 600px;
+	}
+
+	.prototype_video {
+		width: 600px;
+		height: 326px;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.hero_image,
+	.userFlow_image,
+	.lowFidelity_image,
+	.mediumFidelity_image,
+	.highFidelity_image,
+	.design_image {
+		max-width: 450px;
+	}
+
+	.prototype_video {
+		width: 450px;
+		height: 245px;
+	}
 }
