@@ -47,6 +47,10 @@ body {
 	height: 100px;
 }
 
+.new_section3 {
+	height: 100px;
+}
+
 .column_image {
 	max-width: 480px;
 }
@@ -351,5 +355,9 @@ li {
 	.prototype_video {
 		width: 375px;
 		height: 204px;
+	}
+
+	.column_image {
+		max-width: 375px;
 	}
 }
