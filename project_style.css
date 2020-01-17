@@ -343,6 +343,10 @@ li {
 }
 
 @media screen and (max-width: 475px) {
+	.column_image {
+		max-width: 375px;
+	}
+
 	.hero_image,
 	.userFlow_image,
 	.lowFidelity_image,
@@ -355,9 +359,5 @@ li {
 	.prototype_video {
 		width: 375px;
 		height: 204px;
-	}
-
-	.column_image {
-		max-width: 375px;
 	}
 }
