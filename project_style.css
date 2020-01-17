@@ -321,11 +321,35 @@ li {
 	.mediumFidelity_image,
 	.highFidelity_image,
 	.design_image {
-		max-width: 450px;
+		max-width: 475px;
 	}
 
 	.prototype_video {
-		width: 450px;
-		height: 245px;
+		width: 475px;
+		height: 258px;
+	}
+
+	.new_section1 {
+		height: 220px;
+	}
+
+	.new_section2 {
+		height: 160px;
+	}
+}
+
+@media screen and (max-width: 475px) {
+	.hero_image,
+	.userFlow_image,
+	.lowFidelity_image,
+	.mediumFidelity_image,
+	.highFidelity_image,
+	.design_image {
+		max-width: 375px;
+	}
+
+	.prototype_video {
+		width: 375px;
+		height: 204px;
 	}
 }
