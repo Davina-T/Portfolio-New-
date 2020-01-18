@@ -53,6 +53,9 @@ body {
 
 .column_image {
 	max-width: 480px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .image_center {
@@ -339,9 +342,17 @@ li {
 	.new_section2 {
 		height: 160px;
 	}
+
+	#low_fidelity {
+		margin-top: 200px;
+	}
 }
 
 @media screen and (max-width: 475px) {
+	.SITE_CONTAINER {
+		max-width: 365px;
+	}
+
 	.column_image {
 		max-width: 375px;
 	}
