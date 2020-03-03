@@ -43,6 +43,10 @@ body {
 	height: 160px;
 }
 
+.new_section1-1 {
+	height: 100px;
+}
+
 .new_section2 {
 	height: 100px;
 }
@@ -174,6 +178,10 @@ li {
 	margin: 1em auto;
 	padding: 0;
 	max-width: 400px;
+}
+
+#research_p {
+	margin-top: 200px;
 }
 
 /*-------- User Survey --------*/
