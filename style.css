@@ -210,4 +210,8 @@ footer {
 	.project_title {
 		font-size: 26px;
 	}
+
+	footer {
+		font-size: 12px;
+	}
 }

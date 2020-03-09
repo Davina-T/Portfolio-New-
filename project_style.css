@@ -472,4 +472,8 @@ footer {
 		width: 375px;
 		height: 204px;
 	}
+
+	footer {
+		font-size: 12px;
+	}
 }
