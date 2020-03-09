@@ -69,49 +69,88 @@ body {
 	padding: 20px 0px 20px 0px;
 }
 
-/*-------- Profile --------*/
+/*-------- Profile Picture --------*/
 
-.profile_container {
-	max-width: 620px;
-	padding-top: 60px;
-	margin: 0 auto;
-	margin-bottom: 80px;
-}
-
-.profile_container h1 {
-	font-family: 'Dosis', sans-serif;
-	font-weight: bold;
-	font-size: 80px;
-	padding-bottom: 30px;
-}
-
-.profile_container p {
-	font-family: 'Open Sans', sans-serif;
-	font-size: 26px;
-	font-weight: bold;
-}
-
-/*-------- Projects --------*/
-
-.project_title {
-	font-family: 'Open Sans', sans-serif;
-	font-size: 30px;
-	font-weight: bold;
-	margin-top: 40px;
-	margin-bottom: 40px;
-}
-
-.project_container img {
-	max-width: 1000px;
+.profile_picture {
+	max-width: 280px;
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	transition: .3s ease;
+	margin-top: 100px;
 }
 
-.project_container img:hover {
-	transform: scale(1.08, 1.08);
-	transition: .3s ease;
+/*-------- About Me --------*/
+
+.text_container {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: bold;
+	max-width: 480px;
+	padding-top: 60px;
+	margin: 0 auto;
+	margin-top: 20px;
+	margin-bottom: 80px;
+}
+
+.text_container p {
+	color: rgba(0, 0, 0, .5);
+}
+
+.text_container h3 {
+	text-align: center;
+	font-weight: bold;
+	font-size: 40px;
+	font-family: 'Dosis', sans-serif;
+	margin-bottom: 40px;
+}
+
+.text_container ul {
+	list-style-type: none;
+	text-align: center;
+	padding-right: 40px;
+}
+
+.text_container li {
+	margin-top: 8px;
+}
+
+#more_info {
+	margin-top: 60px;
+}
+
+#resume_paragraph {
+	text-align: center;
+}
+
+.text_container a {
+	display: inline-block;
+	text-decoration: none;
+	position: relative;
+	-webkit-transition: all 0.4s ease;
+	transition: all 0.4s ease;
+}
+
+.text_container a:after {
+	content: "";
+	position: absolute;
+	height: 2px;
+	background-color: var(--normalBlue) !important;
+	width: 0;
+	left: 50%;
+	bottom: 0;
+	-webkit-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	transform: translateX(-50%);
+	-webkit-transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55)
+		all;
+	transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) all;
+}
+
+.text_container a:hover {
+	color: var(--normalBlue) !important;
+}
+
+.text_container a:hover:after {
+	width: 100%;
 }
 
 /*-------- Footer --------*/
@@ -160,54 +199,18 @@ footer {
 
 /*-------- Responsive --------*/
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 540px) {
 	.SITE_CONTAINER {
-		max-width: 740px;
-	}
-
-	.project_container img {
-		max-width: 740px;
-	}
-}
-
-@media screen and (max-width: 740px) {
-	.SITE_CONTAINER {
-		max-width: 600px;
-	}
-
-	.project_container img {
-		max-width: 600px;
-	}
-}
-
-@media screen and (max-width: 600px) {
-	.SITE_CONTAINER {
-		max-width: 475px;
-	}
-
-	.project_container img {
-		max-width: 475px;
+		max-width: 425px;
 	}
 }
 
 @media screen and (max-width: 475px) {
 	.SITE_CONTAINER {
-		max-width: 375px;
+		max-width: 365px;
 	}
 
-	.project_container img {
-		max-width: 375px;
-	}
-
-	.profile_container h1 {
-		font-size: 60px;
-	}
-
-	.profile_container p {
-		font-size: 22px;
-	}
-
-	.project_title {
-		font-size: 26px;
+	footer {
+		font-size: 12px;
 	}
 }
